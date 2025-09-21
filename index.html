@@ -1,127 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shubham Jaiswal | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Global Styles */
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #222;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
       color: #fff;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
     header p {
-      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #1e3a8a;
+      padding: 0.7rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+    section h2 {
+      font-size: 1.8rem;
+      color: #2563eb;
       margin-bottom: 1rem;
-      color: #444;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
     }
     ul {
-      list-style: none;
-      padding: 0;
+      margin-left: 1.5rem;
+      list-style-type: disc;
     }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .contact a {
-      color: #0077b5;
-      text-decoration: none;
-    }
-    footer {
+    .footer {
       text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #fff;
+      padding: 2rem;
+      background: #1e293b;
+      color: #cbd5e1;
       margin-top: 2rem;
+    }
+    .badge-container {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Shubham Jaiswal</h1>
     <p>Engineering Manager | Java | Spring Boot | Microservices | AI</p>
-    <p class="contact">
-      📧 <a href="mailto:shubhamjaisw1997@gmail.com">shubhamjaisw1997@gmail.com</a> |
-      📱 +91-8932085430 |
-      <a href="https://www.linkedin.com/in/shubhamjswalka" target="_blank">LinkedIn</a>
-    </p>
+    <p>📍 Gurugram, Haryana, India | 📧 shubhamjaisw1997@gmail.com | 📱 +91-8932085430</p>
   </header>
 
-  <section>
-    <h2>Summary</h2>
-    <p>Over 6 years of experience in Java Spring Boot, microservices, and AI technologies, delivering scalable and resilient software solutions to meet business goals.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#accomplishments">Accomplishments</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Over 6 years of experience in Java Spring Boot, microservices, and AI technologies, delivering scalable and resilient software solutions to meet business goals.
+    </p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Java 17, Spring Boot, Microservices</li>
-      <li>Generative AI, Prompt Engineering, OpenAI, Azure Studio</li>
-      <li>AWS, GCP, Microsoft Azure</li>
-      <li>High/Low-Level Design, OOP, Data Flow Diagrams</li>
-      <li>RabbitMQ, Apache Kafka</li>
-      <li>MySQL, PostgreSQL, MongoDB, DynamoDB</li>
-      <li>IntelliJ IDEA, Jira, Azure DevOps</li>
+      <li><strong>Programming & Frameworks:</strong> Java 17, Spring Boot, Microservices</li>
+      <li><strong>AI & ML Tools:</strong> Generative AI, Prompt Engineering, OpenAI, Azure Studio</li>
+      <li><strong>Cloud Platforms:</strong> AWS, GCP, Microsoft Azure</li>
+      <li><strong>Architecture:</strong> High-Level Design, Low-Level Design, Data Flow Diagrams, OOP</li>
+      <li><strong>Messaging:</strong> RabbitMQ, Apache Kafka</li>
+      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, DynamoDB</li>
+      <li><strong>Tools:</strong> IntelliJ IDEA, Jira, Azure DevOps</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Experience</h2>
-    <h3>HashedIn by Deloitte, Gurugram — Senior Software Management Specialist (Sep 2021 - Present)</h3>
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <h3>HashedIn by Deloitte (Sep 2021 – Present)</h3>
+    <p><em>Senior Software Management Specialist</em></p>
     <ul>
-      <li>Led a team of 10+ developers, ensuring project delivery in collaboration with OpenAI.</li>
-      <li>Developed IntelliJ IDE plugins integrating AI features to simplify workflows.</li>
-      <li>Boosted developer productivity by 40% via JIRA/GitHub/Bitbucket API automation.</li>
-      <li>Architected IntelliJ plugin solutions providing code snippets in 20–30 seconds.</li>
+      <li>Led a team of 10+ developers, aligning efforts with Deloitte and OpenAI collaborations.</li>
+      <li>Developed IntelliJ IDE plugins to integrate AI features and simplify workflows.</li>
+      <li>Automated code generation and repository updates (JIRA, GitHub, Bitbucket APIs) → boosted productivity by 40%.</li>
+      <li>Mentored junior developers, improving debugging and reducing code errors.</li>
+      <li>Architected IntelliJ plugin solutions to provide code snippets within 20–30s.</li>
+      <li>Implemented Microsoft SSO → reduced login times below 30s.</li>
     </ul>
 
-    <h3>Hummingwave Technologies, Bangalore — Software Engineer (Jun 2019 - Aug 2021)</h3>
+    <h3>Hummingwave Technologies (Jun 2019 – Aug 2021)</h3>
+    <p><em>Software Engineer</em></p>
     <ul>
-      <li>Optimized database operations with RoomDB, WaveORM, SQLite.</li>
-      <li>Integrated third-party SDKs for chat, media, scanning, and printing.</li>
-      <li>Enhanced device-level performance using JNI and NDK.</li>
+      <li>Optimized Android communication using XMPP, OkHTTP, Retrofit, RabbitMQ.</li>
+      <li>Enhanced database ops with RoomDB, WaveORM, SQLite.</li>
+      <li>Integrated SDKs (FreshChat, Picasso, Barcode Scanner, Zebra Printer).</li>
+      <li>Utilized JNI/NDK with RF modules for device-level performance.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
-    <p><strong>B.Tech in Information Technology</strong>, Institute of Engineering & Technology, Lucknow (2019) — 80.48%</p>
+    <p>
+      Bachelor of Technology in Information Technology<br />
+      Institute of Engineering & Technology, Lucknow, UP<br />
+      Graduated June 2019 | 80.48%
+    </p>
   </section>
 
-  <section>
+  <section id="accomplishments">
     <h2>Accomplishments</h2>
     <ul>
-      <li>Microsoft Technology Certificate Associate in Database Administration Fundamentals</li>
+      <li>Microsoft Technology Certificate Associate – Database Admin Fundamentals</li>
       <li>Certified in Core and Advanced Java</li>
       <li>Gen AI Essentials Training – Completed</li>
-      <li>Awarded Spot, Excellence, and Top Impactor Awards at HashedIn by Deloitte</li>
+      <li>Awarded Spot, Excellence, and Top Impactor Awards at Deloitte</li>
     </ul>
   </section>
 
-  <footer>
-    <p>© 2025 Shubham Jaiswal | Portfolio</p>
-  </footer>
+  <div class="badge-container">
+    <!-- LinkedIn Badge -->
+    <div class="badge-base LI-profile-badge"
+      data-locale="en_US" data-size="medium" data-theme="light"
+      data-type="VERTICAL" data-vanity="shubhamjswalka" data-version="v1">
+      <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/shubhamjswalka?trk=profile-badge">Shubham Jaiswal</a>
+    </div>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  </div>
 
+  <footer class="footer">
+    <p>© 2025 Shubham Jaiswal. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
