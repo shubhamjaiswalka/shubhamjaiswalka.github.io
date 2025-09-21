@@ -1,152 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubham Jaiswal | Portfolio</title>
-  <style>
-    body {font-family: "Segoe UI", sans-serif; margin:0; background:#f9fafb; color:#333;}
-    header {background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;text-align:center;padding:2rem;}
-    header h1 {font-size:2.5rem;margin-bottom:.3rem;}
-    header p {margin:.3rem 0;}
-    nav {background:#1e3a8a;text-align:center;padding:.7rem;}
-    nav a {color:#fff;margin:0 1rem;text-decoration:none;}
-    section {max-width:900px;margin:2rem auto;padding:1.5rem;background:#fff;border-radius:12px;
-             box-shadow:0 4px 8px rgba(0,0,0,0.08);}
-    section h2 {color:#2563eb;margin-bottom:1rem;border-bottom:2px solid #e5e7eb;padding-bottom:.5rem;}
-    ul {margin-left:1.5rem;}
-    footer {background:#1e293b;color:#cbd5e1;text-align:center;padding:1.5rem;margin-top:2rem;}
-    .badge-container{margin-top:1.5rem;display:flex;justify-content:center;}
-    .download-btn {
-      background:#fff;color:#2563eb;padding:0.7rem 1.2rem;
-      border-radius:8px;text-decoration:none;font-weight:600;
-      box-shadow:0 2px 6px rgba(0,0,0,0.15);
-      display:inline-block;margin-top:1rem;
-    }
-    .download-btn:hover {background:#f1f5f9;}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Jaiswal | Portfolio</title>
+    <style>
+        body {font-family: "Segoe UI", sans-serif; margin:0; background:#f9fafb; color:#333;}
+        header {
+          background:linear-gradient(135deg,#2563eb,#3b82f6);
+          color:#fff; text-align:center; padding:2rem;
+        }
+        header h1 {font-size:2.5rem;margin-bottom:.3rem;}
+        header p {margin:.3rem 0;}
+        nav {background:#1e3a8a;text-align:center;padding:.7rem;}
+        nav a {color:#fff;margin:0 1rem;text-decoration:none;}
+        section {
+          max-width:900px;margin:2rem auto;padding:1.5rem;background:#fff;
+          border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.08);
+        }
+        section h2 {
+          color:#2563eb;margin-bottom:1rem;border-bottom:2px solid #e5e7eb;
+          padding-bottom:.5rem;
+        }
+        ul {margin-left:1.5rem;}
+        footer {background:#1e293b;color:#cbd5e1;text-align:center;padding:1.5rem;margin-top:2rem;}
+        /* Material-style card for Resume + LinkedIn */
+        .right-card {
+          float:right;
+          margin:1.5rem 2rem;
+          background:#fff;
+          border-radius:12px;
+          box-shadow:0 4px 12px rgba(0,0,0,0.15);
+          padding:1.5rem;
+          width:280px;
+          text-align:center;
+        }
+        .download-btn {
+          background:#2563eb;color:#fff;padding:0.7rem 1.2rem;
+          border-radius:8px;text-decoration:none;font-weight:600;
+          box-shadow:0 2px 6px rgba(0,0,0,0.15);
+          display:inline-block;margin-bottom:1rem;
+        }
+        .download-btn:hover {background:#1e40af;}
+        /* Clear float for sections */
+        .clearfix::after {
+          content:"";display:block;clear:both;
+        }
+        /* Responsive adjustment */
+        @media(max-width:900px){
+          .right-card {float:none;margin:1rem auto;width:90%;}
+        }
+    </style>
 </head>
 <body>
-  <header>
+<header>
     <h1>Shubham Jaiswal</h1>
     <p>Engineering Manager</p>
     <p>📍 Gurugram, Haryana | 📧 shubhamjaisw1997@gmail.com | 📱 +91-8932085430</p>
+</header>
 
-    <!-- Resume Download Button -->
-    <a href="my_resume.pdf" download="Shubham_Jaiswal_Resume.pdf" class="download-btn">
-      ⬇ Download Resume
-    </a>
-  </header>
-
-  <nav>
+<nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#responsibilities">Responsibilities</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#achievements">Achievements</a>
-  </nav>
+</nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Engineering Manager with 6+ years of experience in Java, Spring Boot, Microservices, and AI/ML. 
-       Proven expertise in leading teams, delivering scalable solutions, and improving developer productivity 
-       through automation and optimized processes. Skilled in cloud technologies (AWS, GCP, Azure), distributed 
-       systems, and modern development practices.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><b>Programming & Frameworks:</b> Java 17, Spring Boot, Microservices</li>
-      <li><b>AI & ML Tools:</b> Generative AI, Prompt Engineering, OpenAI, Azure Studio</li>
-      <li><b>Cloud Platforms:</b> AWS, GCP, Microsoft Azure</li>
-      <li><b>Software Architecture:</b> HLD, LLD, Data Flow Diagrams, OOP principles</li>
-      <li><b>Messaging Systems:</b> RabbitMQ, Apache Kafka</li>
-      <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB, DynamoDB</li>
-      <li><b>Tools & IDEs:</b> IntelliJ IDEA, Jira, Azure DevOps</li>
-    </ul>
-  </section>
-
-  <section id="responsibilities">
-    <h2>Roles & Responsibilities</h2>
-    <h3>Technical Responsibilities</h3>
-    <ul>
-      <li>Convert business requirements into technical specifications.</li>
-      <li>Create High-Level Design (HLD) and Low-Level Design (LLD) documents.</li>
-      <li>Oversee the entire development process from design to deployment.</li>
-      <li>Collaborate with Scrum Master to plan sprints and deliverables.</li>
-      <li>Work with the team to assign tasks and resolve blockers.</li>
-      <li>Conduct Proof of Concepts (PoCs) for new initiatives.</li>
-      <li>Review Pull Requests (PRs) and ensure code quality.</li>
-      <li>Engage in peer programming sessions to share knowledge.</li>
-    </ul>
-
-    <h3>Management Responsibilities</h3>
-    <ul>
-      <li>Establish and track career goals for team members.</li>
-      <li>Define project roadmaps and conduct regular one-on-one meetings.</li>
-      <li>Manage performance evaluations and feedback cycles.</li>
-      <li>Foster a culture of collaboration, growth, and accountability.</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <h3>HashedIn by Deloitte (Sep 2021 – Present)</h3>
-    <p><i>Senior Software Management Specialist</i></p>
-    <ul>
-      <li>Led a team of 10+ developers; aligned delivery with Deloitte & OpenAI research collaborations.</li>
-      <li>Developed IntelliJ IDE plugins integrating AI → simplified developer workflows.</li>
-      <li>Automated JIRA/GitHub/Bitbucket workflows → boosted productivity by 40%.</li>
-      <li>Mentored juniors → reduced code errors and improved confidence & delivery speed.</li>
-      <li>Monitored systems with DataDog → reduced troubleshooting time by 20–40%.</li>
-      <li>Architected IntelliJ solutions delivering code snippets in 20–30 seconds.</li>
-      <li>Implemented Microsoft SSO → cut login times below 30s.</li>
-      <li>Led SonarQube remediation → saved 40% developer time.</li>
-    </ul>
-
-    <h3>Hummingwave Technologies (Jun 2019 – Aug 2021)</h3>
-    <p><i>Software Engineer</i></p>
-    <ul>
-      <li>Built reliable Android data exchange with XMPP, Retrofit, RabbitMQ.</li>
-      <li>Optimized database ops with RoomDB, WaveORM, SQLite.</li>
-      <li>Developed engaging UIs with RecyclerView, ViewPager animations.</li>
-      <li>Integrated SDKs (FreshChat, Barcode Scanner, Zebra Printer).</li>
-      <li>Used JNI/NDK for RF modules → improved device performance.</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p><b>B.Tech – Information Technology</b><br>
-       Institute of Engineering & Technology, AKTU Lucknow – Jun 2019<br>
-       Score: 80.48%</p>
-  </section>
-
-  <section id="achievements">
-    <h2>Accomplishments</h2>
-    <ul>
-      <li>Microsoft Technology Certificate Associate – Database Administration Fundamentals</li>
-      <li>Certified in Core and Advanced Java</li>
-      <li>Gen AI Essentials Training – Completed</li>
-      <li>Spot, Excellence & Top Impactor Awards at Deloitte</li>
-    </ul>
-  </section>
-
-  <div class="badge-container">
-    <!-- LinkedIn Badge -->
-    <div class="badge-base LI-profile-badge"
-      data-locale="en_US" data-size="medium" data-theme="light"
-      data-type="VERTICAL" data-vanity="shubhamjswalka" data-version="v1">
-      <a class="badge-base__link LI-simple-link"
-         href="https://in.linkedin.com/in/shubhamjswalka?trk=profile-badge">Shubham Jaiswal</a>
-    </div>
+<!-- Right side card containing Resume Download + LinkedIn badge -->
+<div class="right-card">
+    <!-- LinkedIn Badge inside Material-UI styled card -->
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="shubhamjswalka" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/shubhamjswalka?trk=profile-badge">Shubham Jaiswal</a></div>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  </div>
 
-  <footer>
+    <a href="my_resume.pdf" download="Shubham_Jaiswal_Resume.pdf" class="download-btn">
+    ⬇ Download Resume
+    </a>
+</div>
+
+<!-- Content sections -->
+<div class="clearfix">
+    <section id="about">
+        <h2>About</h2>
+        <p>Engineering Manager with 6+ years of experience in Java, Spring Boot, Microservices, and AI/ML.
+            Proven expertise in leading teams, delivering scalable solutions, and improving developer productivity
+            through automation and optimized processes. Skilled in cloud technologies (AWS, GCP, Azure), distributed
+            systems, and modern development practices.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming & Frameworks:</b> Java 17, Spring Boot, Microservices</li>
+            <li><b>AI & ML Tools:</b> Generative AI, Prompt Engineering, OpenAI, Azure Studio</li>
+            <li><b>Cloud Platforms:</b> AWS, GCP, Microsoft Azure</li>
+            <li><b>Software Architecture:</b> HLD, LLD, Data Flow Diagrams, OOP principles</li>
+            <li><b>Messaging Systems:</b> RabbitMQ, Apache Kafka</li>
+            <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB, DynamoDB</li>
+            <li><b>Tools & IDEs:</b> IntelliJ IDEA, Jira, Azure DevOps</li>
+        </ul>
+    </section>
+
+    <section id="responsibilities">
+        <h2>Roles & Responsibilities</h2>
+        <h3>Technical Responsibilities</h3>
+        <ul>
+            <li>Convert business requirements into technical specifications.</li>
+            <li>Create High-Level Design (HLD) and Low-Level Design (LLD) documents.</li>
+            <li>Oversee the entire development process from design to deployment.</li>
+            <li>Collaborate with Scrum Master to plan sprints and deliverables.</li>
+            <li>Work with the team to assign tasks and resolve blockers.</li>
+            <li>Conduct Proof of Concepts (PoCs) for new initiatives.</li>
+            <li>Review Pull Requests (PRs) and ensure code quality.</li>
+            <li>Engage in peer programming sessions to share knowledge.</li>
+        </ul>
+
+        <h3>Management Responsibilities</h3>
+        <ul>
+            <li>Establish and track career goals for team members.</li>
+            <li>Define project roadmaps and conduct regular one-on-one meetings.</li>
+            <li>Manage performance evaluations and feedback cycles.</li>
+            <li>Foster a culture of collaboration, growth, and accountability.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>HashedIn by Deloitte (Sep 2021 – Present)</h3>
+        <p><i>Senior Software Management Specialist</i></p>
+        <ul>
+            <li>Led a team of 10+ developers; aligned delivery with Deloitte & OpenAI research collaborations.</li>
+            <li>Developed IntelliJ IDE plugins integrating AI → simplified developer workflows.</li>
+            <li>Automated JIRA/GitHub/Bitbucket workflows → boosted productivity by 40%.</li>
+            <li>Mentored juniors → reduced code errors and improved delivery speed.</li>
+            <li>Monitored systems with DataDog → reduced troubleshooting time by 20–40%.</li>
+            <li>Architected IntelliJ solutions delivering code snippets in 20–30 seconds.</li>
+            <li>Implemented Microsoft SSO → cut login times below 30s.</li>
+            <li>Led SonarQube remediation → saved 40% developer time.</li>
+        </ul>
+
+        <h3>Hummingwave Technologies (Jun 2019 – Aug 2021)</h3>
+        <p><i>Software Engineer</i></p>
+        <ul>
+            <li>Built reliable Android data exchange with XMPP, Retrofit, RabbitMQ.</li>
+            <li>Optimized database ops with RoomDB, WaveORM, SQLite.</li>
+            <li>Developed engaging UIs with RecyclerView, ViewPager animations.</li>
+            <li>Integrated SDKs (FreshChat, Barcode Scanner, Zebra Printer).</li>
+            <li>Used JNI/NDK for RF modules → improved device performance.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><b>B.Tech – Information Technology</b><br>
+            Institute of Engineering & Technology, AKTU Lucknow – Jun 2019<br>
+            Score: 80.48%</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Accomplishments</h2>
+        <ul>
+            <li>Microsoft Technology Certificate Associate – Database Administration Fundamentals</li>
+            <li>Certified in Core and Advanced Java</li>
+            <li>Gen AI Essentials Training – Completed</li>
+            <li>Spot, Excellence & Top Impactor Awards at Deloitte</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
     <p>© 2025 Shubham Jaiswal. All rights reserved.</p>
-  </footer>
+</footer>
 </body>
 </html>
